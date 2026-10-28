@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5f2">
+    <meta name="description" content="Search bus journeys, choose your seat and manage your tickets.">
+    <title>Saarthi | Bus reservations</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#book" aria-label="Saarthi home">
+        <span class="brand-mark" aria-hidden="true">s</span>
+        <span>saarthi</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#book" data-nav="book">Book a bus</a>
+        <a href="#history" data-nav="history">My bookings</a>
+        <a href="#cancellation" data-nav="cancellation">Cancellation</a>
+        <a href="#admin" data-nav="admin">Admin</a>
+      </nav>
+      <div class="topbar-status" id="connection-status" role="status" aria-live="polite">
+        <span class="status-indicator" aria-hidden="true"></span>
+        <span>Checking Oracle</span>
+      </div>
+    </header>
+
+    <main>
+      <div id="view" tabindex="-1"></div>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="#book"><span class="brand-mark" aria-hidden="true">s</span><span>saarthi</span></a>
+      <p>Take the seat. Enjoy the journey.</p>
+      <span class="footer-note">Oracle-backed reservation system</span>
+    </footer>
+    <div id="announcer" class="visually-hidden" role="status" aria-live="polite"></div>
+  </body>
+</html>
